@@ -34,7 +34,8 @@ export class UserController {
     // 🍪 Guardar en Cookies
     res.cookie('token', token, { httpOnly: true, secure: false });
 
-    return res.json({ message: 'Usuario registrado', token });
+    return res.json({ message: 'Usuario registrado', token }) , user;
+    
   }
 
   // 🔍 Obtener Usuarios
